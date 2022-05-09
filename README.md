@@ -16,7 +16,7 @@ openssl genrsa -out localhost.key 2048
 openssl req -new -x509 -key localhost.key -out localhost.cert -days 3650 -subj /CN=localhost
 ```
 
-_If you want to use a host other than localhost then replace every reference to “localhost” above witb your custom
+_If you want to use a host other than localhost then replace every reference to “localhost” above with your custom
 domain_.
 
 ```sh
@@ -104,13 +104,13 @@ to add the *https//* prefix:
 https://localhost:443
 ```
 
-This is why you are encouraged to use the default SSL port *443* so you can open:
+This is why you are encouraged to use the default SSL port *443* so that you can open:
 
 ```sh
 https://localhost
 ```
 
-To Revert the effects caused by running sudo, run this command:
+To revert the effects caused by running sudo, run this command:
 
 ```sh
 sudo chown -Rh <username> .meteor/local
