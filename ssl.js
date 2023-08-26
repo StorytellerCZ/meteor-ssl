@@ -30,8 +30,8 @@ SSL = function(key, cert, port) {
     })
     .listen(port);
 
-  proxy.on("error", function() {
-    console.log("HTTP-PROXY NPM MODULE ERROR: " + err);
+  proxy.on("error", function(err) {
+    console.error("HTTP-PROXY NPM MODULE ERROR: " + err);
     return;
   });
 

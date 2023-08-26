@@ -1,6 +1,6 @@
 Package.describe({
   name: 'storyteller:ssl',
-  version: '0.3.0',
+  version: '0.3.1',
   summary: 'SSL support for Meteor local development',
   documentation: 'README.md',
   git: 'https://github.com/nourharidy/meteor-ssl.git'

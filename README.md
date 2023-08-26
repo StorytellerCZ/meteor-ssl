@@ -11,6 +11,9 @@ meteor add stoyteller:ssl
 After the package installation has finished, you place your SSL **key** & **cert** files inside your Meteor *private*
 directory.
 
+> I highly recommend using [mkcert](https://github.com/FiloSottile/mkcert) to setup the certificates for you.
+> Bellow is a simple setup which will fork, but the browser won't be happy about it.
+
 ```sh
 openssl genrsa -out localhost.key 2048
 openssl req -new -x509 -key localhost.key -out localhost.cert -days 3650 -subj /CN=localhost
